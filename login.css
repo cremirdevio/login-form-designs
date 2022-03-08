@@ -1,0 +1,156 @@
+:root {
+    /* font-size: 62.5%; */
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: url(./images/bg-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-form {
+    background-color: #ffffff;
+    padding: 2.5rem;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-width: 400px; */
+    width: 90%;
+}
+
+.login-form > h1 {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+    font-size: 2.0rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    font-weight: 500;
+    padding: 1rem 30px;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #a64bf4;
+    background: -webkit-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: -o-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: -moz-linear-gradient(45deg,#00dbde,#fc00ff);
+    background: linear-gradient(45deg,#00dbde,#fc00ff);
+}
+
+.google-btn {
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 5px rgb(0, 0, 0, 0.2);
+}
+
+.fa-google {
+    color: #34a853;
+}
+
+.fb-btn {
+    background-color: #3b5998;
+}
+
+.login-btn {
+    width: 100%;
+}
+
+.social-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Inputs */
+input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e6e6e6;
+    background-color: #f7f7f7;
+    width: 100%;
+}
+
+input:focus {
+    border: 1px solid #fc00ff;
+    outline: 0;
+}
+
+form {
+    width: 100%;
+}
+
+.form-input {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    margin: 1rem 0;
+}
+
+.form-input label {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 0.3rem;
+}
+
+.login-form a {
+    color: grey;
+}
+
+.login-form a:hover {
+    color: #fc00ff;
+}
+
+
+@media screen and (min-width: 700px) {
+    .login-form {
+        width: 70%;
+    }
+
+    .social-buttons {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (min-width: 900px) {
+    .login-form {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .login-form {
+        max-width: 500px;
+    }
+}

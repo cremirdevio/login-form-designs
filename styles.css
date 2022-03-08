@@ -1,0 +1,33 @@
+.form {
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    min-width: 200px;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border: 1px solid green;
+    /* To remove browsers default border on focus */
+    outline: 0;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+button:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+}
+
+.registration-form {
+    border: 1px solid grey;
+    border-radius: 10px;
+    padding: 30px 20px;
+}

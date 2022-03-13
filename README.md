@@ -14,7 +14,10 @@ Basic form design using HTML and CSS
 
 - Select - `select`, `option`, `optgroup`
 - Checkbox - 
-- Radio Button
-- Range Slider
+- Radio Button - type is `radio`
+- Range Slider - type is `range`
 - File 
 - Hidden Fields
+
+## Data Validation
+`required`, `min-length`, `max-length`, `min`, `max`

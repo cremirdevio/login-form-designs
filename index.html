@@ -48,10 +48,31 @@
               id="emailInput"
               name="email"
               placeholder="Email"
-              value="josephajibodu@gmail.com"
-              disabled
             />
           </div>
+
+          <div class="form">
+            <label for="description">Description:</label>
+            <textarea name="description" id="description" placeholder="Enter your complaints here..."></textarea>
+          </div>
+
+          <label for="languages">Select your programming languages</label>
+          <select name="languages" id="languages" >
+            <option>Select your programming language</option>
+            <optgroup label="Front-End">
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+            </optgroup>
+
+            <optgroup label="Back-End">
+              <option>Java</option>
+              <option>Python</option>
+              <option>Ruby</option>
+              <option>Go</option>
+            </optgroup>
+
+          </select>
 
           <button type="submit">Submit</button>
           <button type="reset">Clear</button>

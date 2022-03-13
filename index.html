@@ -38,8 +38,14 @@
               name="firstname"
               placeholder="Name"
               autofocus
+              required
+              minlength="5"
+              maxlength="10"
             />
           </div>
+
+          <label for="months">How many months do you want to train with us?</label>
+          <input type="number" min="1" max="12" name="months" id="months">
 
           <div class="form">
             <label for="emailInput">Email:</label>
@@ -53,7 +59,7 @@
 
           <div class="form">
             <label for="description">Description:</label>
-            <textarea name="description" id="description" placeholder="Enter your complaints here..."></textarea>
+            <textarea required name="description" id="description" placeholder="Enter your complaints here..."></textarea>
           </div>
 
           <label for="languages">Select your programming languages</label>

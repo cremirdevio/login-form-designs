@@ -20,4 +20,4 @@ Basic form design using HTML and CSS
 - Hidden Fields
 
 ## Data Validation
-`required`, `min-length`, `max-length`, `min`, `max`
+`required`, `minlength`, `maxlength`, `min`, `max`

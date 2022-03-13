@@ -21,3 +21,9 @@ Basic form design using HTML and CSS
 
 ## Data Validation
 `required`, `minlength`, `maxlength`, `min`, `max`
+
+## Form Submission
+- `action` - the url to submit the form to
+- `method` - the protocol for submitting the form. Either `get` or `post`
+
+We'd use a service for testing our form ![https://formspree.io/.](https://formspree.io/.)

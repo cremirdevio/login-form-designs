@@ -24,7 +24,7 @@
       <h1>Introduction to Forms and Inputs</h1>
 
       <div class="registration-form">
-        <form>
+        <form action="https://formspree.io/f/xrgjlglr" method="post">
           <!-- Method 1 -->
           <!-- <label>Name
                     <input type="text" id="nameInput">
@@ -38,8 +38,14 @@
               name="firstname"
               placeholder="Name"
               autofocus
+              required
+              minlength="5"
+              maxlength="10"
             />
           </div>
+
+          <label for="months">How many months do you want to train with us?</label>
+          <input type="number" min="1" max="12" name="months" id="months">
 
           <div class="form">
             <label for="emailInput">Email:</label>
@@ -48,10 +54,81 @@
               id="emailInput"
               name="email"
               placeholder="Email"
-              value="josephajibodu@gmail.com"
-              disabled
             />
           </div>
+
+          <div class="form">
+            <label for="description">Description:</label>
+            <textarea required name="description" id="description" placeholder="Enter your complaints here..."></textarea>
+          </div>
+
+          <label for="languages">Select your programming languages</label>
+          <select name="languages" id="languages" >
+            <option>Select your programming language</option>
+            <optgroup label="Front-End">
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>JavaScript</option>
+            </optgroup>
+
+            <optgroup label="Back-End">
+              <option>Java</option>
+              <option>Python</option>
+              <option>Ruby</option>
+              <option>Go</option>
+            </optgroup>
+
+          </select>
+
+          <div class="form-input">
+            <label for="terms" class="label-inline" >Do you agree to our terms and conditions?</label>
+            <input type="checkbox" name="terms" id="terms" >
+          </div>
+
+          <div class="form-list">
+            <h5><b>Do you have any prior knowledge of programming?</b></h5>
+            
+            <label for="option1A" class="label-inline">A.)</label>
+            <input type="radio" name="question1" id="option1A">
+
+            <label for="option1B" class="label-inline">B.)</label>
+            <input type="radio" name="question1" id="option1B">
+
+            <label for="option1C" class="label-inline">C.)</label>
+            <input type="radio" name="question1" id="option1C">
+
+            <label for="option1D" class="label-inline">D.)</label>
+            <input type="radio" name="question1" id="option1D">
+          </div>
+
+          <div class="form-list">
+            <h5><b>Do you have a laptop?</b></h5>
+            
+            <label for="option2A" class="label-inline">Yes</label>
+            <input type="radio" name="question2" id="option2A">
+
+            <label for="option2B" class="label-inline">Not at all</label>
+            <input type="radio" name="question2" id="option2B">
+
+            <label for="option2C" class="label-inline">Yes, but bad</label>
+            <input type="radio" name="question2" id="option2C">
+
+            <label for="option2D" class="label-inline">Will get one soon.</label>
+            <input type="radio" name="question2" id="option2D">
+          </div>
+
+          <div class="form-input">
+            <label for="slider">Range Slider</label>
+            <input id="slider" type="range" min="1" step="10" max="100" value="100">
+          </div>
+
+          <div class="form-input">
+            <label for="profilePics">File Selection</label>
+            <input type="file" name="profilePics" id="profilePics" accept=".pdf" >
+          </div>
+
+          <input type="hidden" value="product-2" name="product">
+          <input type="hidden" value="fosfhasflsjflsfs" name="apiKey">
 
           <button type="submit">Submit</button>
           <button type="reset">Clear</button>
